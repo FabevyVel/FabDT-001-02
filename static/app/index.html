@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><h1>SEEDS An Alumni Portal</h1></a>
+          <a id="logut" href="#">Logout</a>
+        </nav>
+          <div class="row">
+            <div class="col-3">
+              <div  id="sidebar">
+                <ul>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Guest Lectures</a></li>
+                  <li><a href="#">Reviews</a></li>
+                </ul>
+              </div>  
+            </div>
+            <div class="col-9">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb main-top">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">Students</li>
+                </ol>
+              </nav>
+              <h1 class="farm-head">Students
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">And New</button>
+              </h1>
+              <table class="tab">
+                <tbody>
+                  <tr>
+                    <td id="head">ID</td>
+                    <td id="head">Name</td>
+                    <td id="head">Department</td>
+                    <td id="head">Regulation</td>
+                    <td id="head">Contact No</td>
+                    <td id="head">Guest Lectures</td>
+                    <td id="head">Action</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ravi Kumar</td>
+                    <td>EEE</td>
+                    <td>2004 - 2008</td>
+                    <td>+91-963258704</td>
+                    <td>3</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ravi Kumar</td>
+                    <td>EEE</td>
+                    <td>2004 - 2008</td>
+                    <td>+91-963258704</td>
+                    <td>3</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Raja Velu</td>
+                    <td>ECE</td>
+                    <td>2005 - 2009</td>
+                    <td>+91-9874653210</td>
+                    <td>4</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sundaram</td>
+                    <td>CSC</td>
+                    <td>2006 - 2010</td>
+                    <td>+1-1456863218</td>
+                    <td>1</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Illango</td>
+                    <td>EEE</td>
+                    <td>2007 - 2011</td>
+                    <td>+44-4786248</td>
+                    <td>2</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Raja Rajan</td>
+                    <td>CIVIL</td>
+                    <td>2008 - 2012</td>
+                    <td>+91-962145873</td>
+                    <td>4</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Vallalan</td>
+                    <td>ECE</td>
+                    <td>2009 - 2013 </td>
+                    <td>+91-965874321</td>
+                    <td>2</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Selva Sega</td>
+                    <td>EEE</td>
+                    <td>2010 - 2014</td>
+                    <td>+91-963258704</td>
+                    <td>1</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Create Farmer</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="farmer-name">Name</label>
+                          <input type="name" class="form-control" id="farmer-name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="Email">Email ID</label>
+                          <input type="mail" class="form-control" id="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-location">Location</label>
+                            <select class="custom-select form-control" required>
+                              <option value="">-Select-</option>
+                              <option value="1">Palayamkottai</option>
+                              <option value="2">Seethaparpanallur</option>
+                              <option value="3">Shenkottai</option>
+                              <option value="3">Tenkasi</option>
+                              <option value="3">Pavoorchathram</option>
+                              <option value="3">Tirunelveli Town</option>
+                              <option value="3">Melapavoor</option>
+                              <option value="3">Keelapavoor</option>
+                              <option value="3">Surandai</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <button type="cancel" class="btn btn-outline-secondary">Cancel</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-9 h1{
+    font-size: 50px;
+    font-weight: normal;
+    color: gray;
+}
+    
+.main-top{
+    color: gray;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.container-fluid .nav-top{
+    background-color: gray;
+}
+.col-9 .main-top {
+    background-color: white;
+    padding-bottom: 0px;
+}
+
+.farm-head{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+#sidebar{
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background: rgb(220,220,220);
+    padding: 20px 0px;
+}
+
+#sidebar ul li{
+    color: black;
+    list-style: none;
+    padding: 15px 20px;
+}
+
+#sidebar ul li a{
+    color: black;
+}
+
+#sidebar ul li:hover{
+    background: rgb(192,192,192);
+}
+
+#logut{
+    padding: 20px 40px;
+    color: white;
+}
+
+#head{
+    background-color: rgb(220,220,220);
+    padding: 15px 25px;
+}
+
+.tab .btn-adjust{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.tab{
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.tab td{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.col-9 .tab{
+    width: 96%;
+}
