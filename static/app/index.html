@@ -130,7 +130,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Create Farmer</h2>
+                  <h2 class="modal-title" id="exampleModalLabel">Add New Student</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -142,32 +142,37 @@
                           <input type="name" class="form-control" id="farmer-name" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                          <label for="Email">Email ID</label>
-                          <input type="mail" class="form-control" id="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="farmer-location">Location</label>
+                            <label for="farmer-location">Department</label>
                             <select class="custom-select form-control" required>
                               <option value="">-Select-</option>
-                              <option value="1">Palayamkottai</option>
-                              <option value="2">Seethaparpanallur</option>
-                              <option value="3">Shenkottai</option>
-                              <option value="3">Tenkasi</option>
-                              <option value="3">Pavoorchathram</option>
-                              <option value="3">Tirunelveli Town</option>
-                              <option value="3">Melapavoor</option>
-                              <option value="3">Keelapavoor</option>
-                              <option value="3">Surandai</option>
+                              <option value="1">ECE</option>
+                              <option value="2">EEE</option>
+                              <option value="3">CSC</option>
+                              <option value="3">MECH</option>
+                              <option value="3">CIVIL</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <div class="form-group">
+                          <label for="farmer-location">Batch</label>
+                          <select class="custom-select form-control" required>
+                            <option value="">-Select-</option>
+                            <option value="1">2004-2008</option>
+                            <option value="2">2008-2012</option>
+                            <option value="3">2012-2016</option>
+                            <option value="3">2016-2020</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="Email">Contact No</label>
+                        <input type="mail" class="form-control" id="Email">
+                      </div>
+                        <button type="submit" class="btn btn-secondary">Add</button>
                         <button type="cancel" class="btn btn-outline-secondary">Cancel</button>
                       </form>
                 </div>
               </div>
             </div>
-          </div>
-          
+          </div>     
       </div>
 
     <!-- Optional JavaScript -->
