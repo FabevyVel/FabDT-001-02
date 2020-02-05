@@ -12,127 +12,78 @@
     <title>Hello, world!</title>
   </head>
   <body>
-
-      <div class="container-fluid">
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"><h1>SEEDS An Alumni Portal</h1></a>
-          <a id="logut" href="#">Logout</a>
-        </nav>
-          <div class="row">
-            <div class="col-3">
-              <div  id="sidebar">
-                <ul>
-                  <li><a href="#">Students</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Guest Lectures</a></li>
-                  <li><a href="#">Reviews</a></li>
-                </ul>
-              </div>  
-            </div>
-            <div class="col-9">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb main-top">
-                    <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item">Guest Lectures</li>
-                </ol>
-              </nav>
-              <h1 class="farm-head">Guest Lectures
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">And New</button>
-              </h1>
-              <table class="tab">
-                <tbody>
-                  <tr>
-                    <td id="head">Lecturer ID</td>
-                    <td id="head">Lecturer</td>
-                    <td id="head">Event Name</td>
-                    <td id="head">Event Date</td>
-                    <td id="head">Reviews</td>
-                    <td id="head">Total Lectures</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Ravi Kumar</td>
-                    <td>TechnoMela</td>
-                    <td>01/08/2020</td>
-                    <td>10</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Raja Velu</td>
-                    <td>TechnoMela</td>
-                    <td>01/08/2020</td>
-                    <td>10</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td>TechnoMela</td>
-                    <td>01/08/2020</td>
-                    <td>10</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td>01/08/2020</td>
-                    <td>10</td>
-                    <td>10</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+    <div class="container-fluid">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><h1>SEEDS An Alumni Portal</h1></a>
+        <a id="logut" href="#">Logout</a>
+      </nav>
+      <div class="row">
+        <div class="col-3">
+          <div  id="sidebar">
+            <ul>
+              <li><a href="#">Students</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Guest Lectures</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
           </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Add New Student</h2>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                          <label for="farmer-name">Name</label>
-                          <input type="name" class="form-control" id="farmer-name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="farmer-location">Department</label>
-                            <select class="custom-select form-control" required>
-                              <option value="">-Select-</option>
-                              <option value="1">ECE</option>
-                              <option value="2">EEE</option>
-                              <option value="3">CSC</option>
-                              <option value="3">MECH</option>
-                              <option value="3">CIVIL</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="farmer-location">Batch</label>
-                          <select class="custom-select form-control" required>
-                            <option value="">-Select-</option>
-                            <option value="1">2004-2008</option>
-                            <option value="2">2008-2012</option>
-                            <option value="3">2012-2016</option>
-                            <option value="3">2016-2020</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="Email">Contact No</label>
-                        <input type="mail" class="form-control" id="Email">
-                      </div>
-                        <button type="submit" class="btn btn-secondary">Add</button>
-                        <button type="cancel" class="btn btn-outline-secondary">Cancel</button>
-                      </form>
-                </div>
-              </div>
-            </div>
-          </div>     
+        </div>
+        <div class="col-9">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb main-top">
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item">Guest Lectures</li>
+            </ol>
+          </nav>
+          <h1 class="farm-head">Guest Lectures
+          </h1>
+          <table class="tab">
+            <tbody>
+              <tr>
+                <td id="head">Lecturer ID</td>
+                <td id="head">Lecturer</td>
+                <td id="head">Event Name</td>
+                <td id="head">Event Date</td>
+                <td id="head">Reviews</td>
+                <td id="head">Total Lectures</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ravi Kumar</td>
+                <td>TechnoMela</td>
+                <td>01/08/2020</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Raja Velu</td>
+                <td>TechnoMela</td>
+                <td>01/08/2020</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Sundaram</td>
+                <td>TechnoMela</td>
+                <td>01/08/2020</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Illango</td>
+                <td>Technova</td>
+                <td>01/08/2020</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
