@@ -1,0 +1,79 @@
+*{
+   box-sizing: border-box;
+   font-family: 'Open Sans', ;
+}
+.mr-0{
+   margin: 0 !important;
+}
+.padd-0{
+   padding: 0 !important;
+}
+ul{
+   padding-left: 0;
+}
+
+.table-part table{
+   text-align: center;
+}
+
+.table-part table th ,td{
+   padding: 10px;
+   border: 1px solid #2b2b2b;
+}
+
+.table-part  .table thead th{
+   border: 1px solid #2b2b2b;
+   font-weight: 600;
+   background-color: #c1c1c1;
+   color: #2b2b2b;
+}
+
+
+.table-part table .edit-btn{
+   display: inline-block;
+   padding-bottom: 2px;
+   margin-right: 10px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #ddd;
+   text-transform: capitalize;
+}
+.table-part table .dl-btn{
+   display: inline-block;
+   padding-bottom: 2px;
+   outline: none;
+   text-transform: capitalize;
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid #ddd;
+}
+
+
+.banner-text .nav-item .nav-link{
+   padding:10px 10px 10px 0;
+}
+
+.banner-sec{
+   padding: 20px 0;
+}
+.banner-sec .create-btn{
+   text-align: right;
+}
+
+.banner-sec .create-btn button{
+   padding: 8px 20px;
+   display: inline-block;
+   border-radius: 0;
+   text-transform: capitalize;
+   border: none;
+   outline: none;
+   box-shadow: none;
+   color: #fff;
+   background-color: #777;
+   margin: 20px 0;
+}
+
+.detail-part{
+   padding: 0 20px;
+}
