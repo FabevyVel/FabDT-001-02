@@ -15,13 +15,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     MyPageComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StudentsComponent } from './students/students.component';
 import { EventsComponent } from './events/events.component';
-import { GuestlecturesComponent } from './gestlectures/gestlectures.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { GuestLecturesComponent } from './guestlectures/guestlectures.component';
 
 const routes: Routes = [
   {
@@ -15,8 +16,12 @@ const routes: Routes = [
     component: EventsComponent,
   },
   {
-    path: "gestlectures",
-    component: GuestlecturesComponent,
+    path: "reviews" ,
+    component: ReviewsComponent,
+  },
+  {
+    path: "guest" ,
+    component: GuestLecturesComponent,
   },
 ];
 
@@ -26,5 +31,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const MyPageComponent = [StudentsComponent,EventsComponent,GuestlecturesComponent];
+export const MyPageComponent = [StudentsComponent,EventsComponent,ReviewsComponent,GuestLecturesComponent];
 

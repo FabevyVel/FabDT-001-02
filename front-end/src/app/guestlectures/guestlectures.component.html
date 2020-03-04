@@ -23,23 +23,23 @@
     <div class="table-part">
        <table class="table">
           <thead>
-             <tr *ngFor="let guestlectures list of guestlecturesList">
-                <th>{{guestlectureslist.id}}</th>
-                <th>{{guestlectureslist.lecturer}}</th>
-                <th>{{guestlectureslist.name}}</th>
-                <th>{{guestlectureslist.date}}</th>
-                <th>{{guestlectureslist.review}}</th>
-                <th>{{guestlectureslist.total}}</th>
+             <tr *ngFor="let guestlecturelist of guestlecturesList">
+                <th>{{guestlecturelist.id}}</th>
+                <th>{{guestlecturelist.name}}</th>
+                <th>{{guestlecturelist.event}}</th>
+                <th>{{guestlecturelist.date}}</th>
+                <th>{{guestlecturelist.review}}</th>
+                <th>{{guestlecturelist.total}}</th>
              </tr>
           </thead>
           <tbody>
              <tr *ngFor="let guestlectures of guestlecturess">
-                <td>{{guestlecturers.id}}</td>
-                <td>{{guestlecturers.lecturer}}</td>
-                <td>{{guestlecturers.name}}</td>
-                <td>{{guestlecturers.date}}</td>
-                <td>{{guestlecturers.review}}</td>
-                <td>{{guestlecturers.total}}</td>
+                <td>{{guestlectures.id}}</td>
+                <td>{{guestlectures.name}}</td>
+                <td>{{guestlectures.event}}</td>
+                <td>{{guestlectures.date}}</td>
+                <td>{{guestlectures.review}}</td>
+                <td>{{guestlectures.total}}</td>
              </tr>
  
           </tbody>
