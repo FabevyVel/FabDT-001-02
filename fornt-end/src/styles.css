@@ -61,21 +61,17 @@ ul{
    text-align: right;
 }
 
-.banner-sec .create-btn button{
-   padding: 8px 20px;
-   display: inline-block;
-   border-radius: 0;
-   text-transform: capitalize;
-   border: none;
-   outline: none;
-   box-shadow: none;
-   color: #fff;
-   background-color: #777;
-   margin: 20px 0;
+.banner-text ul li a{
+   color: #999;
+}
+
+#menu-icon{
+   position: relative;
+   margin-right: 10px;
+   top: 10px;
+   color: #999;
 }
 
 .detail-part{
    padding: 0 20px;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

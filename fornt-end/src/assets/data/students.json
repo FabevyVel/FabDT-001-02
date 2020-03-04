@@ -1,0 +1,50 @@
+[{
+        "id": 1,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    },
+    {
+        "id": 2,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    },
+    {
+        "id": 3,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    },
+    {
+        "id": 4,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    },
+    {
+        "id": 5,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    },
+    {
+        "id": 6,
+        "name": "Ravi Kumar",
+        "dept": "EEE",
+        "regulation":"2004-2008",
+        "contact":"+91-9345654432",
+        "guest":3
+    }
+
+]
