@@ -30,24 +30,24 @@
    <div class="table-part">
       <table class="table">
          <thead>
-            <tr>
-               <th>Id</th>
-               <th>Name</th>
-               <th>Department</th>
-               <th>Regulation</th>
-               <th>Contact No</th>
-               <th>Guest Lectures</th>
-               <th>Action</th>
+            <tr *ngFor="let studentlist of studentsList">
+               <th>{{studentlist.id}}</th>
+               <th>{{studentlist.name}}</th>
+               <th>{{studentlist.dept}}</th>
+               <th>{{studentlist.regulation}}</th>
+               <th>{{studentlist.contact}}</th>
+               <th>{{studentlist.guest}}</th>
+               <th>{{studentlist.action}}</th>
             </tr>
          </thead>
          <tbody>
-            <tr *ngFor="let student of students">
-               <td>{{student.id}}</td>
-               <td>{{student.name}}</td>
-               <td>{{student.dept}}</td>
-               <td>{{student.regulation}}</td>
-               <td>{{student.contact}}</td>
-               <td>{{student.guest}}</td>
+            <tr *ngFor="let students of studentss">
+               <td>{{students.id}}</td>
+               <td>{{students.name}}</td>
+               <td>{{students.dept}}</td>
+               <td>{{students.regulation}}</td>
+               <td>{{students.contact}}</td>
+               <td>{{students.guest}}</td>
                <td>
                   <button class='edit-btn'>edit</button>
                   <button class='dl-btn'>delete</button>
