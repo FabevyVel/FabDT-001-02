@@ -2,12 +2,17 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { StudentsComponent } from './students/students.component';
+import { EventsComponent } from './events/events.component';
 
 
 const routes: Routes = [
   {
     path: "students",
     component: StudentsComponent
+  },
+  {
+    path: "events",
+    component: EventsComponent
   }
 ];
 
@@ -17,4 +22,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const MyPageCompoent = [StudentsComponent];
+export const MyPageCompoent = [StudentsComponent,EventsComponent];
