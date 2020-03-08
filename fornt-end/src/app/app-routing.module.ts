@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StudentsComponent } from './students/students.component';
 import { EventsComponent } from './events/events.component';
+import { GuestLecturesComponent } from './guestlectures/guestlectures.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,14 @@ const routes: Routes = [
   {
     path: "events",
     component: EventsComponent
+  },
+  {
+    path: "guest",
+    component: GuestLecturesComponent
+  },
+  {
+    path: "reviews",
+    component: ReviewsComponent
   }
 ];
 
@@ -22,4 +32,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const MyPageCompoent = [StudentsComponent,EventsComponent];
+export const MyPageCompoent = [StudentsComponent,EventsComponent,GuestLecturesComponent,ReviewsComponent];
