@@ -1,29 +1,39 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { StudentsComponent } from './students/students.component';
-import { EventsComponent } from './events/events.component';
-import { GuestLecturesComponent } from './guestlectures/guestlectures.component';
-import { ReviewsComponent } from './reviews/reviews.component';
-
+import { StudentsComponent } from './pages/students/students.component';
+import { StudentCreateComponent } from './pages/student-create/student-create.component';
+import { EventsComponent } from './pages/events/events.component';
+import { ReviewsComponent } from './pages/reviews/reviews.component';
+import { GuestLecturesComponent } from './pages/guest-lectures/guest-lectures.component';
+import { CreateEventComponent } from './pages/create-event/create-event.component';
 
 const routes: Routes = [
   {
     path: "students",
-    component: StudentsComponent
+    component: StudentsComponent,
+  },
+  {
+    path: "student-create",
+    component: StudentCreateComponent,
   },
   {
     path: "events",
-    component: EventsComponent
-  },
-  {
-    path: "guest",
-    component: GuestLecturesComponent
+    component: EventsComponent,
   },
   {
     path: "reviews",
-    component: ReviewsComponent
+    component: ReviewsComponent,
+  },
+  {
+    path: "guest-lectures",
+    component: GuestLecturesComponent,
+  },
+  {
+    path: "create-event",
+    component: CreateEventComponent,
   }
+
 ];
 
 @NgModule({
@@ -32,4 +42,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const MyPageCompoent = [StudentsComponent,EventsComponent,GuestLecturesComponent,ReviewsComponent];
+export const MyPageComponent = [StudentsComponent,StudentCreateComponent,CreateEventComponent,
+GuestLecturesComponent,ReviewsComponent,EventsComponent];
+
