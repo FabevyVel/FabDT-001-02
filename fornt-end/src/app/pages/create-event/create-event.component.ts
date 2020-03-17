@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentsService } from 'src/app/students.service';
 
 @Component({
   selector: 'app-create-event',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateEventComponent implements OnInit {
 
-  constructor() { }
+  public reviews = [];
 
-  ngOnInit(): void {
+  constructor(private _studentsService: StudentsService) { }
+
+  ngOnInit() {
+    this._studentsService.getReviews()
+    .subscribe(data => this.reviews = data);
   }
 
 }
