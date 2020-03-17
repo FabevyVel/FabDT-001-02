@@ -57,6 +57,14 @@ ul{
    padding:10px 10px 10px 0;
 }
 
+.banner-text .nav {
+   border: none;
+   margin-bottom: 0;
+}
+.banner-text .nav .nav-item .nav-link.active{
+   border:none;
+}
+
 .banner-sec{
    padding: 20px 0;
 }
@@ -137,4 +145,36 @@ ul{
 
 .content-part{
    width: 41%;
+}
+
+.tab-content-part{
+   width: 38%;
+}
+
+.tab-part ul{
+   border-bottom: 1px solid #465161;
+   margin-bottom: 30px;
+}
+
+.tab-part  .nav-tabs .nav-item{
+   margin-bottom: 0;
+}
+
+.tab-part .nav-tabs .nav-link{
+   border:none;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: capitalize;
+   color: #252525;
+   padding: 10px 35px;
+}
+
+.tab-part .nav-tabs .nav-link.active{
+    border-bottom: 2px solid #252525;
+}
+
+.tab-part  form select{
+   width: 300px;
+   height: 40px;
+   border:1px solid #ced4da;
 }
