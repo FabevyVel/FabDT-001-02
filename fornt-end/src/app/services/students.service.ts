@@ -46,19 +46,4 @@ export class StudentsService{
     return this.http.get(this.config.APIUrl + this.config.reviews , options).map((response: Response) => {
       return response.json();
     });}
-  // addhospital(data: any) {
-  //   const body = JSON.stringify(data)
-  //   return this.http.post(`${this.config.APIUrl}${this.config.HospitalCreate}`, body, { headers: this.headers })
-  //     .map(res => {
-  //       return res.json();
-  //     });
-  // };
-
-  // HospitalPut(data: any) {
-  //   const options = new RequestOptions({ headers: this.headers });
-  //   const body = JSON.stringify(data)
-  //   return this.http.put(this.config.APIUrl + 'HospitalUpdate', body, options).map((response: Response) => {
-  //     return response.json();
-  //   });
-  // };
 }
