@@ -10,11 +10,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
-import { StudentsService } from './students.service';
+import { StudentsService } from './services/students.service';
 
+import { HttpModule } from '@angular/http';
 
-
-
+import { AppConfig } from './config/appconfig';
 
 @NgModule({
   declarations: [
@@ -27,9 +27,10 @@ import { StudentsService } from './students.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpModule,
     HttpClientModule
   ],
-  providers: [StudentsService],
+  providers: [StudentsService,AppConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

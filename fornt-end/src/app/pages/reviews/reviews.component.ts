@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from 'src/app/students.service';
+import { StudentsService } from '../../services/students.service';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class ReviewsComponent implements OnInit {
   constructor(private _studentsService: StudentsService) { }
 
   ngOnInit() {
-    this._studentsService.getReviews()
+    this._studentsService.studentFetch()
     .subscribe(data => this.reviews = data);
   }
 

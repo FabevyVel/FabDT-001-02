@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from 'src/app/students.service';
+import { StudentsService } from '../../services/students.service';
 
 @Component({
   selector: 'app-events',
@@ -13,7 +13,11 @@ export class EventsComponent implements OnInit {
   constructor(private _studentsService: StudentsService) { }
 
   ngOnInit() {
-    this._studentsService.getEvents()
+    this.getEvents()
+
+  }
+  public getEvents(){
+    this._studentsService.eventsFetch()
     .subscribe(data => this.events = data);
   }
 
