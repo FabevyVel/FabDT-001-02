@@ -1,0 +1,42 @@
+[{
+        "id": 1,
+        "name": "Tecnomela",
+        "dept": "EEE",
+        "date":"10/08/2020",
+        "invited":10,
+        "accepted":3
+    },
+    {
+        "id": 2,
+        "name": "Tecnomela",
+        "dept": "CIVIL",
+        "date":"10/08/2020",
+        "invited":10,
+        "accepted":3
+    },
+    {
+        "id": 3,
+        "name": "Tecnomela",
+        "dept": "CSE",
+        "date":"10/08/2020",
+        "invited":10,
+        "accepted":3
+    },
+    {
+        "id": 4,
+        "name": "Tecnomela",
+        "dept": "ECE",
+        "date":"10/08/2020",
+        "invited":10,
+        "accepted":3
+    },
+    {
+        "id": 5,
+        "name": "Tecnomela",
+        "dept": "MECH",
+        "date":"10/08/2020",
+        "invited":10,
+        "accepted":3
+    }
+
+]

@@ -1,0 +1,115 @@
+<section class="detail-part">
+   <div class="banner-sec">
+      <div class="row">
+         <div class="col-6">
+            <div class="banner-text">
+               <ul class="nav">
+                  <li class="nav-item">
+                     <a class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <span id="menu-icon">/</span>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link">Events</a>
+                  </li>
+               </ul>
+               <h2>Events</h2>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="create-btn">
+               <a routerLink="/events">
+               Back
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="tab-part student-create">
+	<ul ngbNav #nav="ngbNav" class="nav-tabs">
+	  <li ngbNavItem>
+	    <a ngbNavLink>Info</a>
+	    <ng-template ngbNavContent>
+	    		<form action="#">
+	    			<div class="form-group row">
+	    				<div class="col-3">
+	    					<label>Event Name</label>
+	    				</div>
+	    				<div class="col-9">
+	    					<input type="name" name="" class="form-control">
+	    				</div>
+	    			</div>
+	    			<div class="form-group row">
+	    				<div class="col-3">
+	    					<label>Department</label>
+	    				</div>
+	    				<div class="col-9">
+	    					<select>
+	    						<option value="0">EEE</option>
+	    						<option value="1">ECE</option>
+	    						<option value="2">MECH</option>
+	    						<option value="3">CIVIL</option>
+	    						<option value="4">CSE</option>
+	    					</select>
+	    				</div>
+	    			</div>
+	    			<div class="form-group row">
+	    				<div class="col-3">
+	    					<label>Date</label>
+	    				</div>
+	    				<div class="col-9">
+	    					<input type="date" name="" class="form-control">
+	    				</div>
+	    			</div>
+	    			<div class="form-group row">
+	    				<div class="col-12">
+	    					<button type="submit" class="submit-btn">Update</button>
+	    				</div>
+	    			</div>
+	    		</form>
+	    </ng-template>
+	  </li>
+	  <li ngbNavItem>
+	    <a ngbNavLink>Guests</a>
+	    <ng-template ngbNavContent></ng-template>
+	  </li>
+	  <li ngbNavItem>
+	    <a ngbNavLink>Reviews</a>
+	    <ng-template ngbNavContent>
+	    		<div class="table-part">
+				 <table class="table">
+				    <thead>
+				       <tr>
+				          <th>Event Id</th>
+				          <th>Lecturer</th>
+				          <th>Reviewer</th>
+				          <th>Event Name</th>
+				          <th class="tab-content-part">Review</th>
+				          <th>Rating</th>
+				          <th>Action</th>
+				       </tr>
+				    </thead>
+				    <tbody>
+				       <tr *ngFor="let review of reviews">
+				          <td>{{review.id}}</td>
+				          <td>{{review.lecturername}}</td>
+				          <td>{{review.reviewer}}</td>
+				          <td>{{review.name}}</td>
+				          <td>{{review.reviews}}</td>
+				          <td>{{review.rating}}</td>
+				          <td>
+			                  <button class='edit-btn'>Approve</button>
+			                  <button class='dl-btn'>Decline</button>
+			               </td>
+				       </tr>
+
+				    </tbody>
+				 </table>
+			</div>
+	    </ng-template>
+	  </li>
+	</ul>
+	<div [ngbNavOutlet]="nav"></div>
+</section>
