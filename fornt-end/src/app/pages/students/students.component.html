@@ -42,14 +42,14 @@
          </thead>
          <tbody>
             <tr *ngFor="let student of students">
-               <td>{{student.id}}</td>
+               <td>{{student.studentId}}</td>
                <td>{{student.name}}</td>
-               <td>{{student.dept}}</td>
-               <td>{{student.regulation}}</td>
-               <td>{{student.contact}}</td>
+               <td>{{student.department}}</td>
+               <td>{{student.batch}}</td>
+               <td>{{student.contactNo}}</td>
                <td>{{student.guest}}</td>
                <td>
-                  <button class='edit-btn'>edit</button>
+                  <a class='edit-btn' routerLink="edit/', student.id" >edit</a>
                   <button class='dl-btn'>delete</button>
                </td>
             </tr>
@@ -58,4 +58,4 @@
       </table>
    </div>
 
-</section>   
+</section>

@@ -7,32 +7,40 @@ import { EventsComponent } from './pages/events/events.component';
 import { ReviewsComponent } from './pages/reviews/reviews.component';
 import { GuestLecturesComponent } from './pages/guest-lectures/guest-lectures.component';
 import { CreateEventComponent } from './pages/create-event/create-event.component';
+import { LoginComponent } from './login/login.component';
+
+
 
 const routes: Routes = [
   {
     path: "students",
-    component: StudentsComponent,
+    component: StudentsComponent
   },
   {
     path: "student-create",
-    component: StudentCreateComponent,
+    component: StudentCreateComponent
   },
   {
     path: "events",
-    component: EventsComponent,
+    component: EventsComponent
   },
   {
     path: "reviews",
-    component: ReviewsComponent,
+    component: ReviewsComponent
   },
   {
     path: "guest-lectures",
-    component: GuestLecturesComponent,
+    component: GuestLecturesComponent
   },
   {
     path: "create-event",
-    component: CreateEventComponent,
+    component: CreateEventComponent
+  },
+  {
+    path: "",
+    component: LoginComponent,pathMatch:'full'
   }
+
 
 ];
 
@@ -43,5 +51,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const MyPageComponent = [StudentsComponent,StudentCreateComponent,CreateEventComponent,
-GuestLecturesComponent,ReviewsComponent,EventsComponent];
+GuestLecturesComponent,ReviewsComponent,EventsComponent,LoginComponent];
 

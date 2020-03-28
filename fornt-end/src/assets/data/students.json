@@ -1,50 +1,35 @@
-[{
-        "id": 1,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    },
-    {
-        "id": 2,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    },
-    {
-        "id": 3,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    },
-    {
-        "id": 4,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    },
-    {
-        "id": 5,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    },
-    {
-        "id": 6,
-        "name": "Ravi Kumar",
-        "dept": "EEE",
-        "regulation":"2004-2008",
-        "contact":"+91-9345654432",
-        "guest":3
-    }
-
+[
+  {
+    "_id": "5e738238dc80fc2e42822d02",
+    "name": "suriya",
+    "department": "ece",
+    "batch": "2021",
+    "contactNo": "9600748589",
+    "studentId": "5e738238dc80fc2e42822d02",
+    "createdAt": "2020-03-19T14:31:20.989Z",
+    "updatedAt": "2020-03-19T14:31:20.989Z",
+    "__v": 0
+  },
+  {
+    "_id": "5e73823edc80fc2e42822d03",
+    "name": "raj",
+    "department": "ece",
+    "batch": "2021",
+    "contactNo": "9600748589",
+    "studentId": "5e73823edc80fc2e42822d03",
+    "createdAt": "2020-03-19T14:31:26.916Z",
+    "updatedAt": "2020-03-19T14:31:26.916Z",
+    "__v": 0
+  },
+  {
+    "_id": "5e7382e1dc80fc2e42822d04",
+    "name": "kannan",
+    "department": "ece",
+    "batch": "2021",
+    "contactNo": "9600748589",
+    "studentId": "5e7382e1dc80fc2e42822d04",
+    "createdAt": "2020-03-19T14:34:09.720Z",
+    "updatedAt": "2020-03-19T14:34:09.720Z",
+    "__v": 0
+  }
 ]
