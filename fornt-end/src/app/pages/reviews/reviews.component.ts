@@ -14,7 +14,12 @@ export class ReviewsComponent implements OnInit {
   constructor(private _studentsService: StudentsService) { }
 
   ngOnInit() {
+<<<<<<< HEAD
 this.getReviews();
+=======
+    this._studentsService.studentFetch()
+    .subscribe(data => this.reviews = data);
+>>>>>>> 350690170cac106e0ac8b7daf89940d882bbb2de
   }
  public getReviews(){
   this._studentsService.studentFetch()

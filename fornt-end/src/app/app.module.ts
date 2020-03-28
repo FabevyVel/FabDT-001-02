@@ -31,7 +31,10 @@ import { AppConfig } from './config/appconfig';
     AppRoutingModule,
     NgbModule,
     HttpModule,
+<<<<<<< HEAD
     FormsModule,
+=======
+>>>>>>> 350690170cac106e0ac8b7daf89940d882bbb2de
     HttpClientModule
   ],
   providers: [StudentsService,AppConfig],
