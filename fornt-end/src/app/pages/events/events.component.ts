@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from '../../services/students.service';
 
 @Component({
   selector: 'app-events',
@@ -8,17 +7,10 @@ import { StudentsService } from '../../services/students.service';
 })
 export class EventsComponent implements OnInit {
 
-   public events = [];
-
-  constructor(private _studentsService: StudentsService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getEvents()
 
-  }
-  public getEvents(){
-    this._studentsService.eventsFetch()
-    .subscribe(data => this.events = data);
   }
 
 }

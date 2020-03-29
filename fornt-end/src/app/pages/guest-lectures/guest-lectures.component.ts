@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from '../../services/students.service';
 
 @Component({
   selector: 'app-guest-lectures',
@@ -8,21 +7,11 @@ import { StudentsService } from '../../services/students.service';
 })
 export class GuestLecturesComponent implements OnInit {
 
-  public lectures = [];
 
-  constructor(private _studentsService: StudentsService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getLectures();
 
-  }
-
-  public getLectures(){
- this._studentsService.lecturesFetch()
-    .subscribe(lecturers => {
-      console.log("lecturers",lecturers)
-      this.lectures = lecturers;
-        }    );
   }
 
 }
