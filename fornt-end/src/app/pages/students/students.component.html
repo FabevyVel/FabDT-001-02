@@ -49,8 +49,8 @@
                <td>{{student.contactNo}}</td>
                <td>{{student.guest}}</td>
                <td>
-                  <button class='edit-btn'>edit</button>
-                  <button class='dl-btn'>delete</button>
+                  <button class='edit-btn' (click)="studentProfile(student)">edit</button>
+                  <button class='dl-btn' (click)="studentDelete(student.studentId)">delete</button>
                </td>
             </tr>
 

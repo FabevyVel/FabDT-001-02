@@ -10,35 +10,41 @@ import { CreateEventComponent } from './pages/create-event/create-event.componen
 import { LoginComponent } from './login/login.component';
 
 
-
 const routes: Routes = [
   {
-    path: "students",
+    path: '', redirectTo: '/login', pathMatch: 'full'
+  },
+  {
+    path: 'students',
     component: StudentsComponent
   },
   {
-    path: "student-create",
+    path: 'student-create',
     component: StudentCreateComponent
   },
   {
-    path: "events",
+    path: 'events',
     component: EventsComponent
   },
   {
-    path: "reviews",
+    path: 'reviews',
     component: ReviewsComponent
   },
   {
-    path: "guest-lectures",
+    path: 'guest-lectures',
     component: GuestLecturesComponent
   },
   {
-    path: "create-event",
+    path: 'create-event',
     component: CreateEventComponent
   },
   {
-    path: "",
-    component: LoginComponent,pathMatch:'full'
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: '',
+    component: LoginComponent, pathMatch: 'full'
   }
 
 
@@ -50,6 +56,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const MyPageComponent = [StudentsComponent,StudentCreateComponent,CreateEventComponent,
-GuestLecturesComponent,ReviewsComponent,EventsComponent,LoginComponent];
+export const MyPageComponent = [StudentsComponent, StudentCreateComponent, CreateEventComponent,
+GuestLecturesComponent, ReviewsComponent, EventsComponent, LoginComponent];
 

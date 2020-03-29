@@ -12,7 +12,7 @@ import 'rxjs/add/operator/catch';
 import { Body } from '@angular/http/src/body';
 
 @Injectable()
-export class StudentsService{
+export class UserService{
   constructor(private http: Http, private config: AppConfig) { }
   public readonly headers = new Headers({
     'Content-Type': 'application/json; charset=utf-8',
@@ -36,23 +36,26 @@ export class StudentsService{
       return response.json();
     })
   }
-  lecturesFetch() {
-    const options = new RequestOptions({ headers: this.headers });
-    return this.http.get(this.config.APIUrl + this.config.lecturers , options).map((response: Response) => {
-      return response.json();
-    });
-  }
-  eventsFetch() {
-    const options = new RequestOptions({ headers: this.headers });
-    return this.http.get(this.config.APIUrl + this.config.events , options).map((response: Response) => {
-      return response.json();
-    });
+  studentCreate(data: any) {
+    const body = JSON.stringify(data)
+    return this.http.post(`${this.config.APIUrl}${this.config.students}`, body, { headers: this.headers })
+      .map(res => {
+        return res.json();
+      });
+  };
 
-  }
+  studentUpdate(data: any) {
+    const body = JSON.stringify(data)
+    return this.http.post(`${this.config.APIUrl}${this.config.students}`, body, { headers: this.headers })
+      .map(res => {
+        return res.json();
+      });
+  };
+  studentDelete(id: string) {
 
-  reviewsFetch() {
-    const options = new RequestOptions({ headers: this.headers });
-    return this.http.get(this.config.APIUrl + this.config.reviews , options).map((response: Response) => {
-      return response.json();
-    });}
+    return this.http.delete((this.config.APIUrl + this.config.students, id), { headers: this.headers })
+      .map(res => {
+        return res.json();
+      });
+  };
 }

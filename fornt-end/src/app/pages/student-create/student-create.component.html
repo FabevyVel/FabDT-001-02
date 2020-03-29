@@ -26,24 +26,24 @@
          </div>
       </div>
    </div>
-</section>   
+</section>
 
 <section class="student-create">
-	<form action="http://localhost:3000/students" method="POST">
-		<div class="form-group row">
-			<div class="col-3">
-				<label>Id</label>
-			</div>
-			<div class="col-9">
-				<input type="name" name="_id" class="form-control">
-			</div>
-		</div>
+	<form [formGroup]="studentForm" (ngSubmit)="studentCreate()">
+
 		<div class="form-group row">
 			<div class="col-3">
 				<label>Name</label>
 			</div>
 			<div class="col-9">
-				<input type="name" name="name" class="form-control">
+				<input type="text" formControlName="nameForm" name="name" [(ngModel)]="name"
+        [ngClass]="{ 'is-invalid': submitted && f.nameForm.errors }"
+        autocomplete="off"  placeholder="enter student id"
+        class="form-control"  maxlength="50" >
+        <div *ngIf="submitted && f.nameForm.errors" class="invalid-feedback">
+            <div class="requirecolor valiAlign" *ngIf="f.nameForm.errors.required">
+                 name is required</div>
+        </div>
 			</div>
 		</div>
 		<div class="form-group row">
@@ -51,7 +51,14 @@
 				<label>Department</label>
 			</div>
 			<div class="col-9">
-				<input type="name" name="department" class="form-control">
+				<input type="text" formControlName="departmentForm" name="department" [(ngModel)]="department"
+        [ngClass]="{ 'is-invalid': submitted && f.departmentForm.errors }"
+        autocomplete="off"  placeholder="enter department"
+        class="form-control" maxlength="50">
+        <div *ngIf="submitted && f.departmentForm.errors" class="invalid-feedback">
+            <div class="requirecolor valiAlign" *ngIf="f.departmentForm.errors.required">
+                department is required</div>
+        </div>
 			</div>
 		</div>
 		<div class="form-group row">
@@ -59,47 +66,45 @@
 				<label>Batch</label>
 			</div>
 			<div class="col-9">
-				<input type="name" name="batch" class="form-control">
-			</div>
-		</div>
-		<div class="form-group row">
-			<div class="col-3">
-				<label>studentId</label>
-			</div>
-			<div class="col-9">
-				<input type="name" name="studentId" class="form-control">
-			</div>
-		</div>
-		<div class="form-group row">
-			<div class="col-3">
-				<label>createdAt</label>
-			</div>
-			<div class="col-9">
-				<input type="name" name="createdAt" class="form-control">
-			</div>
-		</div>
-		<div class="form-group row">
-			<div class="col-3">
-				<label>updatedAt</label>
-			</div>
-			<div class="col-9">
-				<input type="name" name="updatedAt" class="form-control">
+        <input type="text" formControlName="batchForm" name="batch" [(ngModel)]="batch"
+        [ngClass]="{ 'is-invalid': submitted && f.batchForm.errors }"
+        autocomplete="off"  placeholder="enter batch"
+        class="form-control" maxlength="50">
+        <div *ngIf="submitted && f.batchForm.errors" class="invalid-feedback">
+            <div class="requirecolor valiAlign" *ngIf="f.batchForm.errors.required">
+                batch is required</div>
+        </div>
 			</div>
 		</div>
 		<!-- <div class="form-group row">
 			<div class="col-3">
-				<label>Regulation</label>
+				<label>StudentID</label>
 			</div>
-			<div class="col-9">
-				<input type="name" name="" class="form-control">
-			</div>
-		</div> -->
+      <div class="col-9">
+          <input type="text" formControlName="studentForm" name="studentID" [(ngModel)]="studentID"
+          [ngClass]="{ 'is-invalid': submitted && f.studentForm.errors }"
+          autocomplete="off"  placeholder="enter student id"
+          class="form-control"  maxlength="50" >
+          <div *ngIf="submitted && f.studentForm.errors" class="invalid-feedback">
+              <div class="requirecolor valiAlign" *ngIf="f.studentForm.errors.required">
+                student id is required</div>
+          </div>
+        </div>
+    </div> -->
+
 		<div class="form-group row">
 			<div class="col-3">
 				<label>Contact No</label>
 			</div>
 			<div class="col-9">
-				<input type="name" name="contactNo" class="form-control">
+				<input ype="text" formControlName="contactForm" name="contactNo" [(ngModel)]="contactNo"
+        [ngClass]="{ 'is-invalid': submitted && f.contactForm.errors }"
+        autocomplete="off"  placeholder="enter student id"
+        class="form-control"  maxlength="50" >
+        <div *ngIf="submitted && f.contactForm.errors" class="invalid-feedback">
+            <div class="requirecolor valiAlign" *ngIf="f.contactForm.errors.required">
+                contact number is required</div>
+        </div>
 			</div>
 		</div>
 		<!-- <div class="form-group row">
@@ -112,7 +117,7 @@
 		</div> -->
 		<div class="form-group row">
 			<div class="col-12">
-				<button type="submit" class="submit-btn">Submit</button>
+				<button type="submit" class="submit-btn">{{buttonText}}</button>
 			</div>
 		</div>
 	</form>
