@@ -1,0 +1,74 @@
+[
+ {
+	"id":15,
+ 	"ownerid":12,
+ 	"ownername":"Rathinasamy",
+ 	"storename":"Rathina",
+ 	"createdon":"10-01-2020",
+ 	"product":50,
+ 	"leads":100
+ },
+ {
+ 	"id":45,
+ 	"ownerid":45,
+ 	"ownername":"Abu Dhakir",
+ 	"storename":"Abu",
+ 	"createdon":"13-01-2019",
+ 	"product":29,
+ 	"leads":20
+ },
+ {
+ 	"id":12,	
+ 	"ownerid":5,
+ 	"ownername":"Ajai Jothi",
+ 	"storename":"Ajai",
+ 	"createdon":"01-01-2020",
+ 	"product":3,
+ 	"leads":12
+ },
+ {
+   	"id":45,
+   	"ownerid":78,
+   	"ownername":"Alphonse Jesus",
+   	"storename":"Alphonse",
+   	"createdon":"12-04-2019",
+   	"product":13,
+   	"leads":34
+ },
+ {
+ 	"id":5,
+ 	"ownerid":15,
+ 	"ownername":"Anand Nandhu",
+ 	"storename":"Anand",
+ 	"createdon":"10-01-2020",
+ 	"product":42,
+ 	"leads":12
+ },
+ {
+  	"id":78,
+  	"ownerid":18,
+  	"ownername":"Andualem Besfa",
+  	"storename":"Andualem",
+  	"createdon":"13-01-2019",
+   	"product":90,
+   	"leads":43
+ },
+ {
+ 	"id":4,
+ 	"ownerid":65,
+ 	"ownername":"Archana Stalin",
+ 	"storename":"Archana",
+ 	"createdon":"01-01-2020",
+ 	"product":12,
+ 	"leads":234
+ },
+ {
+ 	"id":12,
+ 	"ownerid":81,
+ 	"ownername":"Arivarasan",
+ 	"storename":"Arivaras",
+ 	"createdon":"12-04-2019",
+ 	"product":43,
+ 	"leads":11
+ }
+]
