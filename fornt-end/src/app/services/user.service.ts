@@ -51,9 +51,9 @@ export class UserService{
         return res.json();
       });
   };
-  studentDelete(id: string) {
-
-    return this.http.delete((this.config.APIUrl + this.config.students, id), { headers: this.headers })
+  studentDelete(data: any) {
+    const body = JSON.stringify(data)
+    return this.http.put( `${this.config.APIUrl}${this.config.students}`,body , { headers: this.headers })
       .map(res => {
         return res.json();
       });

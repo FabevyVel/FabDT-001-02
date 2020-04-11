@@ -1,82 +1,144 @@
-.login {
-  width: 400px;
-  margin: 16px auto;
-  font-size: 16px;
-}
 
-/* Reset top and bottom margins from certain elements */
-.login-header,
-.login p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,700');
 
-/* The triangle form is achieved by a CSS hack */
-.login-triangle {
-  width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border: 12px solid transparent;
-  border-bottom-color: #28d;
-}
-
-.login-header {
-  background: #28d;
-  padding: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.login-container {
-  background: #ebebeb;
-  padding: 12px;
-}
-
-/* Every row inside .login-container is defined with p tags */
-.login p {
-  padding: 12px;
-}
-
-.login input {
+/************ Start Main Rules **************/
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+button{
+  outline: none;
+}
+button:focus{
+  outline: none;
+}
+
+.main-box{
+  position: relative;
+  display: block;
+  width: 50%;
+  margin: 50px 80px 0 auto;
+  padding: 25px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background:linear-gradient(to right, #232f41, #374a62);
+}
+
+
+/************ Start Form Container **************/
+
+.top-buttons {
+  position: relative;
   display: block;
   width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 16px;
-  outline: 0;
-  font-family: inherit;
-  font-size: 0.95em;
+  height: 15%;
+  padding: 25px;
+  text-align: right;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
-}
-
-/* Text fields' focus effect */
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
-  border-color: #888;
-}
-
-.login input[type="submit"] {
-  background: #28d;
-  border-color: transparent;
-  color: #fff;
+.top-buttons button {
+  color: #cacaca;
+  border: none;
+  width: 90px;
+  margin: -2px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  background: #4c5c72;
   cursor: pointer;
 }
 
-.login input[type="submit"]:hover {
-  background: #17c;
+.top-buttons button:nth-child(1) {
+  border-radius: 50px 0 0 50px;
 }
 
-/* Buttons' focus effect */
-.login input[type="submit"]:focus {
-  border-color: #05a;
+.top-buttons button:nth-child(2) {
+  border-radius: 0 50px 50px 0;
+}
+
+.top-active-button {
+  color: #fff !important;
+  box-shadow: 0 0 20px #2a2a2a;
+  background: linear-gradient(#68dac7,#54c7ba) !important;
+  transition: all 0.3s ease;
+}
+
+.form{
+  width: 100%;
+  height: 85%;
+  padding: 10px 40px;
+}
+
+.form form {
+  width: 100%;
+  height: 100%;
+}
+
+.form form 
+lable,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+}
+
+.form form lable {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 6px 0;
+}
+
+p.terms {
+  color: #9E9E9E;
+  margin-bottom: 60px;
+}
+
+.form form 
+input[type="text"],
+input[type="email"], 
+input[type="password"] {
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 45px;
+  padding: 5px 0 10px 0;
+  background: transparent;
+  border-bottom: 1px solid #4c5c72;
+}
+
+.form form input::placeholder{
+  color: #cecece;
+}
+
+.form form a {
+  color: #fff;
+}
+
+input.form-btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 12px 55px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: all 0.3s linear;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(to right, #5bcdbe,#41ab9e);
+}
+
+input.form-btn:hover{
+  box-shadow: none
+}
+
+.form-signin{
+  display: none;
+  padding-top: 40px;
 }

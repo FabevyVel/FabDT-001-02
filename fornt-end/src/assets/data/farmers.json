@@ -1,0 +1,85 @@
+[
+  {  
+  	"id":15,
+	"name":"Rathinasamy",
+    "email":"rathinasamy@gmail.com",
+    "location":"Kurumbalaperi",
+    "shop":1,
+    "product":50,
+    "leads":100
+ },
+		
+ { 
+  "id":45,
+  "name":"Abu Dhakir",
+  "email":"ajai@gmail.com",
+  "location":"Keelapavoor",
+  "shop":2,
+  "product":29,
+  "leads":20
+ },
+		
+ {
+ 	"id":12,
+    "name":"Ajai Jothi",
+    "email":"jothi@gmail.com",
+    "location":"Melapavoor",
+    "shop":2,
+    "product":3,
+    "leads":12
+ },
+ {
+	"id":45,
+	"name":"Alphonse Jesus",
+    "email":"alphonse@gmail.com",
+    "location":"Surandai",
+    "shop":3,
+    "product":13,
+    "leads":34
+ },
+ {
+    "id":5,
+    "name":"Anand Nandhu",
+    "email":"nandhu@gmail.com",
+    "location":"SV Karai",
+    "shop":3,
+    "product":42, 
+    "leads":12
+ },
+ {
+	"id":78,
+    "name":"Andualem Besfa",
+    "email":"anduale@gmail.com",
+    "location":"Navaneetha Puram",
+    "shop":2,
+    "product":90,
+    "leads":43
+ },
+ {
+	"id":4,
+    "name":"Archana Stalin",
+    "email":"nagar@gmail.com",
+    "location":"Avudayanoor",
+    "shop":1,
+    "product":12,
+    "leads":234
+ },
+ {
+    "id":12,
+    "name":"Arivanarasan",
+    "email":"arivanarasan@gmail.com",
+	"location":"Town",
+	"shop":"1",
+	"product":"43",
+	"leads":"11"
+ },
+ {
+	"id":9,
+	"name":"Mani Kumar",
+	"email":"ravikumar@gmail.com",
+	"location":"Kurumbalaperi",
+	"shop":"1",
+	"product":"30",
+	"leads":"100"
+}
+]

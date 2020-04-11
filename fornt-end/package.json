@@ -1,5 +1,5 @@
 {
-  "name": "fornt-end",
+  "name": "sample-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.1",
-    "@angular/common": "~9.0.1",
+    "@angular/common": "^9.0.7",
     "@angular/compiler": "~9.0.1",
     "@angular/core": "~9.0.1",
     "@angular/forms": "~9.0.1",
@@ -21,12 +21,11 @@
     "@angular/platform-browser": "~9.0.1",
     "@angular/platform-browser-dynamic": "~9.0.1",
     "@angular/router": "~9.0.1",
-    "@ng-bootstrap/ng-bootstrap": "^6.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^5.3.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
-    "rxjs-compat": "^6.5.4",
+    "rxjs-compat": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
@@ -50,9 +49,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.",
-  "main": "karma.conf.js",
-  "author": "",
-  "license": "ISC"
+  }
 }

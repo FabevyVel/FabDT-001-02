@@ -1,0 +1,67 @@
+[
+	{
+		"id":15,
+		"name":"Rathinasamy",
+		"email":"rathinasamy@gmail.com",
+		"mobilenumber":9874563215,
+		"location":"Kurumbalaperi",
+		"enquirycount":100
+	},
+	{
+		"id":45,
+		"name":"Abu Dhakir",
+		"email":"ajai@gmail.com",
+		"mobilenumber":9632587405,
+		"location":"Keelapavoor",
+		"enquirycount":20
+	},
+	{
+		"id":12,
+		"name":"Ajai Jothi",
+		"email":"jothi@gmail.com",
+		"mobilenumber":9632587405,
+		"location":"Melapavoor",
+		"enquirycount":12
+	},
+	{
+		"id":45,
+		"name":"Alphonse Jesus",
+		"email":"alphonse@gmail.com",
+		"mobilenumber":9632587405,
+		"location":"Surandai",
+		"enquirycount":34
+	},
+	{
+		"id":5,
+		"name":"Anand Nandhu",
+		"email":"nandhu@gmail.com",
+		"mobilenumber":9874563215,
+		"location":"SV Karai",
+		"enquirycount":12
+	},
+	{
+	    "id":78,
+		"name":"Andualem Besfa",
+		"email":"anduale@gmail.com",
+		"mobilenumber":9632587405,
+		"location":"Navaneetha Puram",
+		"enquirycount":43
+	},
+	{
+		"id":4,	
+		"name":"Archana Stalin",
+		"email":"nagar@gmail.com",
+		"mobilenumber":9632587405,
+		"location":"Avudayanoor",
+		"enquirycount":234
+	},
+	{
+		"id":12,
+		"name":"Arivarasan",
+		"email":"arivarasan@gmail.com",
+		"mobilenumber":9874563215,
+		"location":"Town",
+		"enquirycount":11
+	}
+			
+]		
