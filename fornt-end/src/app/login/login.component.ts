@@ -48,6 +48,7 @@ export class LoginComponent implements OnInit {
       this._userService.GetUserLogin(data)
       .subscribe(
         (response: any) => {
+          debugger;
           if (response) {
             let resToken = JSON.parse(response._body);
             let token=resToken.token;

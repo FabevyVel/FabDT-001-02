@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentsService } from 'src/app/services/students.service';
 
 
 @Component({
@@ -8,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
+  public reviews: string;
 
-  constructor() { }
+  constructor(private _studentsService: StudentsService) { }
 
   ngOnInit() {
+    this.reviewsFetch();
   }
- 
+
+  public reviewsFetch():void{
+    debugger;
+    this._studentsService.reviewsFetch()
+    .subscribe(data => {
+debugger;
+      this.reviews = data;
+    }
+      );
+  }
 }

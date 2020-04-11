@@ -13,8 +13,17 @@ export class CreateEventComponent implements OnInit {
   constructor(private _studentsService: StudentsService) { }
 
   ngOnInit() {
-    this._studentsService.studentFetch()
-    .subscribe(data => this.reviews = data);
+   this.eventsFetch();
   }
 
+public eventsFetch():void{
+  debugger;
+  this._studentsService.eventsFetch()
+  .subscribe(data => {
+
+    this.reviews = data;
+  }
+    );
 }
+}
+
