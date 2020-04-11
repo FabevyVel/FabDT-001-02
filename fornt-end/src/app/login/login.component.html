@@ -11,22 +11,22 @@
 
       <!-- Sign Up -->
       <div class="form form-signup">
-         <form action="#">
+         <form [formGroup]="signupForm" (ngSubmit)="signup()">
             <div>
-               <input type="text"  placeholder="Your Name">
+               <input type="text"  formControlName="nameForm" name="name" [(ngModel)]="name"   [ngClass]="{ 'is-invalid': submitted1 && f1.nameForm.errors }" autocomplete="off" placeholder="Your Name">
             </div>
             <div>
-               <input type="email" placeholder="Your E-mail">
+               <input type="email" placeholder="Your E-mail" formControlName="emailForm" name="email" [(ngModel)]="email"   [ngClass]="{ 'is-invalid':submitted1 && f1.emailForm.errors }" autocomplete="off">
             </div>
             <div>
-               <input type="password" placeholder="Your Password">
+               <input type="password" placeholder="Password" [(ngModel)]="Password" formControlName="passwordForm" name="password"    [ngClass]="{ 'is-invalid': submitted1 && f1.passwordForm.errors }" autocomplete="off">
             </div>
             <div>
-               <p class="terms">
+               <!-- <p class="terms">
                   <input type="checkbox">
-                  I agree all statments in 
+                  I agree all statments in
                   <a href="#" class="lined-link">terms of service</a>
-               </p>
+               </p> -->
             </div>
             <input type="submit" class="form-btn" value="Sign Up"/>
             <a href="#" class="lined-link to-signin-link">I'm already member</a>
@@ -36,7 +36,7 @@
       <!-- Sign In -->
       <div class="form form-signin">
          <div class="login">
-            <form class="login-container"  [formGroup]="loginForm" (ngSubmit)="Login()">
+            <form class="login-container"  [formGroup]="loginForm" (ngSubmit)="login()">
             <p>
                <input type="email" placeholder="Email" formControlName="emailForm" name="username" [(ngModel)]="Username"   [ngClass]="{ 'is-invalid': submitted && f.emailForm.errors }" autocomplete="off">
             </p>

@@ -28,10 +28,16 @@ export class UserService{
       return response;
     });
   };
+  userSignup(data: any) {
+    const body = JSON.stringify(data)
+    return this.http.post(`${this.config.APIUrl}${this.config.signup}`, body, { headers: this.headers })
+    .map((response: Response) => {
+      return response;
+    });
+  };
 
   studentFetch() {
     const options = new RequestOptions({ headers: this.headers });
-    debugger;
     return this.http.get(this.config.APIUrl + this.config.students , options).map((response: Response) => {
       return response.json();
     })
@@ -51,9 +57,10 @@ export class UserService{
         return res.json();
       });
   };
-  studentDelete(data: any) {
-    const body = JSON.stringify(data)
-    return this.http.put( `${this.config.APIUrl}${this.config.students}`,body , { headers: this.headers })
+
+  studentDelete(id: any) {
+
+    return this.http.delete( this.config.APIUrl + 'students/'+id, { headers: this.headers })
       .map(res => {
         return res.json();
       });

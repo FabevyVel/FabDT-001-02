@@ -14,10 +14,14 @@ declare var jQuery: any;
 export class LoginComponent implements OnInit {
   //#region  variable declare
   loginForm: FormGroup;
+  signupForm:FormGroup;
   submitted = false;
+  submitted1 = false;
   Username: any;
   Password: any;
   loginData: any;
+  name:string;
+  email:string;
   //#endregion
 
   constructor(
@@ -28,6 +32,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
+      emailForm: ['', [Validators.required]],
+      passwordForm: ['', Validators.required]
+    });
+
+    this.signupForm = this.formBuilder.group({
+      nameForm:['',[Validators.required]],
       emailForm: ['', [Validators.required]],
       passwordForm: ['', Validators.required]
     });
@@ -74,7 +84,43 @@ export class LoginComponent implements OnInit {
   get f() {
     return this.loginForm.controls;
   }
-  Login() {
+
+  get f1() {
+    return this.signupForm.controls;
+  }
+  public signup():void{
+    debugger;
+    this.submitted1 = true;
+    // stop here if form is invalid
+    if (this.signupForm.invalid) {
+      return;
+    } else {
+      const data = {
+        username: this.name,
+        email: this.email,
+        password: this.Password
+      };
+
+      this._userService.userSignup(data)
+      .subscribe(
+        (response: any) => {
+          debugger;
+          if (response) {
+            this.router.navigate(["./login"]);
+          } else {
+            return;
+          }
+        },
+        error => {
+          $(".alert").css({ display: "block" });
+          setTimeout(function() {
+            $(".alert").css({ display: "none" });
+          }, 3000);
+        }
+      );
+    }
+  }
+  login() {
     this.submitted = true;
     // stop here if form is invalid
     if (this.loginForm.invalid) {
@@ -108,7 +154,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  
+
 
 
 }

@@ -30,9 +30,8 @@ public studentProfile(student): void{
   this._router.navigate(['/student-create']);
 }
 public studentDelete(id): void{
-  this._userService.studentDelete(id).subscribe((data:any)=>{
-    console.log("bjsgdjksd")
-
+  this._userService.studentDelete(id).subscribe((data: any)=>{
+this.getStudent();
   })
 
 }

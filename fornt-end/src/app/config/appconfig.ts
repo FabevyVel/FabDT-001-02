@@ -5,6 +5,8 @@ export class AppConfig {
 
   public readonly login = 'login';
 
+  public readonly signup = 'signup';
+
   public readonly students = 'students';
 
   public readonly lecturers = 'lecturers';
